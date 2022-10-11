@@ -88,26 +88,26 @@ for (let a = 1; a <= 100; a++) {
 
 for (let b = 1; b <= 100; b++) {
     if (b % 3 === 0 && b % 5 === 0) {
-      //  console.log(`I found a ${b}. High five! Three is a crowd`)
+        //  console.log(`I found a ${b}. High five! Three is a crowd`)
 
     } else if (b % 5 === 0) {
-     //   console.log(`I found a ${b}. High five!`)
+        //   console.log(`I found a ${b}. High five!`)
     } else if (b % 3 === 0) {
-       // console.log(`I found a ${b}. Three is a crowd`)
+        // console.log(`I found a ${b}. Three is a crowd`)
     }
 
 }
 //===== D. Savings account =======
 //1.
 let bankAccount = 0;
-for (let bank = 1; bank <= 10; bank++ ){
+for (let bank = 1; bank <= 10; bank++) {
     bankAccount += bank
 }
-    console.log(bankAccount)
+console.log(bankAccount)
 //2.
 // let bonus = 0;
 // for(let pay = 1; pay <= 100; pay*2){
-   
+
 // }
 // console.log(bonus)
 
@@ -124,7 +124,7 @@ for (let bank = 1; bank <= 10; bank++ ){
 let quotes = ["If you don't grow, you are shrinking", "Life is to short to live in the past", "YOLO"]
 
 //===== C. Accessing elements ======
-const randomThings = [1, 10,"Hello", true]
+const randomThings = [1, 10, "Hello", true]
 
 //1.
 console.log(randomThings[0])
@@ -147,7 +147,7 @@ ourClass.push("Cloud City")
 
 //====== E. Mix It Up =====
 const myArray = [5, 10, 500, 20];
-myArray.push("Aegon","Betty")
+myArray.push("Aegon", "Betty")
 //push to add item in the end of the array
 myArray.shift(0)
 //shift to remove the first item in the array
@@ -161,3 +161,16 @@ myArray.pop(5)
 // //console.log(myArray)
 
 // //===== F. Biggie Smalls ======
+
+let integer = [30, 54, 300, 101];
+
+for(let q = 0; q <= integer.length; q++){
+if (integer[q] < 100) {
+    console.log(integer[q] + " little number");
+
+} else if (integer[q] > 100){
+    console.log(integer[q] + " big number");
+}
+
+}
+
