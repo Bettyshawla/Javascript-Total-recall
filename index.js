@@ -164,13 +164,25 @@ myArray.pop(5)
 
 let integer = [30, 54, 300, 101];
 
-for(let q = 0; q <= integer.length; q++){
-if (integer[q] < 100) {
-    console.log(integer[q] + " little number");
+for (let q = 0; q <= integer.length; q++) {
+    if (integer[q] < 100) {
+        console.log(integer[q] + " little number");
 
-} else if (integer[q] > 100){
-    console.log(integer[q] + " big number");
+    } else if (integer[q] > 100) {
+        console.log(integer[q] + " big number");
+    }
 }
 
-}
+//======= G. Monkey in the Middle ========
 
+let monkey = [1, 2, 7, 11, 12]
+
+for(let middle = 0; middle <= integer.length; middle++){
+if(monkey[middle]>10){
+    console.log(monkey[middle] + " big number")
+}else if(monkey[middle] < 5){
+    console.log(monkey[middle] +  " little number")
+} else{
+    console.log("monkey")
+}
+}
