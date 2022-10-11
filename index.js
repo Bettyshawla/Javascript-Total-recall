@@ -177,12 +177,62 @@ for (let q = 0; q <= integer.length; q++) {
 
 let monkey = [1, 2, 7, 11, 12]
 
-for(let middle = 0; middle <= integer.length; middle++){
-if(monkey[middle]>10){
-    console.log(monkey[middle] + " big number")
-}else if(monkey[middle] < 5){
-    console.log(monkey[middle] +  " little number")
-} else{
-    console.log("monkey")
+for (let middle = 0; middle <= integer.length; middle++) {
+    if (monkey[middle] > 10) {
+        console.log(monkey[middle] + " big number")
+    } else if (monkey[middle] < 5) {
+        console.log(monkey[middle] + " little number")
+    } else {
+        console.log("monkey")
+    }
 }
-}
+//======= H. What's in Your Closet? ========
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+//1. 
+console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`)
+//2.
+kristynsCloset.splice(6, 0, "raybans")
+//3.  
+kristynsCloset.splice(5, 1, "staied kint hat ")
+//console.log(kristynsCloset);
+//4. 
+console.log(thomsCloset[0][0])
+//5. 
+console.log(thomsCloset[1][0])
+//6. 
+console.log(thomsCloset[2][2])
+//7.
+console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]} and ${thomsCloset[2][1]}`)
+//8.
+thomsCloset[1].splice(2, 1, "Footie Pajamas")
+
+//console.log(thomsCloset)
+
