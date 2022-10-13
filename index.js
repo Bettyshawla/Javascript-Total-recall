@@ -236,3 +236,63 @@ thomsCloset[1].splice(2, 1, "Footie Pajamas")
 
 //console.log(thomsCloset)
 
+//================ IV. Functions =================
+
+//======= A. printGreeting ========
+    function printGreeting(name){
+        console.log(`Hello there,  ${name}`);
+    }
+     printGreeting("Christina");
+
+//======= B. printCool ==========
+
+
+//======= C. calculateCube ==========
+
+
+//======= D. isVowel ==========
+let vowel = ("a", "e", "i", "o", "u")
+function isVowel(vowels) {
+    if (vowels === "a") {
+        return true
+    } else if (vowels === "e") {
+        return true
+    } else if (vowels === "i") {
+        return true
+    } else if (vowels === "o") {
+        return true
+    } else if (vowels === "u") {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isVowel("a"))
+
+//======= E. getTwoLengths==========
+
+//======= F.  getMultipleLengths ==========
+
+
+//======= G. maxOfThree ==========
+const maxNum = function maxOfThree(x, y, z) {
+    if (x >= y) {
+        return x;
+    } else if (y >= z) {
+        return y;
+    } else if (x >= z) {
+        return x;
+    } else {
+        return z
+    }
+}
+console.log(maxNum(7, 9, 10));
+
+//======= H. printLongestWord  ==========
+
+const printLongestWord =function(...args)  {
+    args.length
+}
+//console.log(printLongestWord(["BoJack", "Princess", "Peanutbutter", "big", "Todd"]));
+
+//================  Objects =================
