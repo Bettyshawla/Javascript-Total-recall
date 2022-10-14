@@ -377,4 +377,20 @@ console.log( user.friend.purchased[1])
 
 
 
- //console.log(user)
+//======= F ========
+//1.
+for(let p = 0 ; p < user.purchased.length; p++ ){
+    user.purchased[p]
+    console.log(user.purchased[p])
+}
+//2.
+for(let i = 0; i < user.friend.purchased.length; i++){
+    user.friend.purchased[i]
+    console.log(user.friend.purchased[i])
+}
+
+//======= G ========
+
+
+
+//console.log(user)
