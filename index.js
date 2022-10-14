@@ -363,34 +363,52 @@ user.friend = {
     purchased: []
 }
 //2.
- console.log( user.friend.name)
- //3.
- console.log( user.friend.location)
+console.log(user.friend.name)
+//3.
+console.log(user.friend.location)
 //4.
- user.friend.age= 55
+user.friend.age = 55
 //5.
 user.friend.purchased.push("The One Ring")
 //6.
 user.friend.purchased.push("A latte")
 //7.
-console.log( user.friend.purchased[1])
+console.log(user.friend.purchased[1])
 
 
 
 //======= F ========
 //1.
-for(let p = 0 ; p < user.purchased.length; p++ ){
+for (let p = 0; p < user.purchased.length; p++) {
     user.purchased[p]
     console.log(user.purchased[p])
 }
 //2.
-for(let i = 0; i < user.friend.purchased.length; i++){
+for (let i = 0; i < user.friend.purchased.length; i++) {
     user.friend.purchased[i]
     console.log(user.friend.purchased[i])
+
 }
 
 //======= G ========
 
+//2.
+function updatedUser() {
+    user.age += 1
+    console.log(user.age);
 
+}
+updatedUser();
 
-//console.log(user)
+//3.
+
+user.firstName = user.firstName.toUpperCase()
+
+console.log(user)
+
+//4.
+function oldAndLoud(person){
+    user.firstName = user.firstName + person;
+console.log((user.firstName))
+}
+oldAndLoud(" ABES")
