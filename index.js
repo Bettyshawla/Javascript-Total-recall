@@ -247,14 +247,14 @@ printGreeting("Slimer");
 
 //======= B. printCool ==========
 
-function printCool(name){
+function printCool(name) {
     console.log(`${name} is cool`);
 }
 printCool("captain Reynolds");
 
 //======= C. calculateCube ==========
-function calculateCube(numbercube){
-console.log(Math.pow(numbercube, 2))
+function calculateCube(numbercube) {
+    console.log(Math.pow(numbercube, 2))
 }
 calculateCube(4)
 
@@ -287,9 +287,9 @@ console.log(getTwoLengths("Hank", "Hippopopalous"))
 
 //======= F.  getMultipleLengths ==========
 
-function getMultipleLengths(word1, word2, word3, word4, word5){
-const multipleArray = [word1.length, word2.length,word3.length, word4.length, word5.length];
-return multipleArray;
+function getMultipleLengths(word1, word2, word3, word4, word5) {
+    const multipleArray = [word1.length, word2.length, word3.length, word4.length, word5.length];
+    return multipleArray;
 }
 console.log(getMultipleLengths("hello", "what", "is", "up", "dude"));
 
@@ -314,13 +314,13 @@ const printLongestWord = (args) => {
 
     let longestWord = "";
 
-    for(let i = 0; i < args.length; i++){
-        if(args[i].length > longestWord.length){
+    for (let i = 0; i < args.length; i++) {
+        if (args[i].length > longestWord.length) {
             longestWord = args[i]
         }
         // return longestWord;
     }
-console.log(longestWord);
+    console.log(longestWord);
 }
 args = ["BoJack", "Princess", "Peanutbutter", "big", "Todd"]
 printLongestWord(args)
@@ -333,8 +333,48 @@ let user = {
     firstName: 'Josh',
     email: 'josh@gmail.com',
     age: 20,
-    //purchased: [BMW]
+    purchased: []
 }
 //======= B ========
-user.email='joshnew@gmail.com'
+user.email = 'joshnew@gmail.com'
+
+user.age++
+
 console.log(user)
+
+//======= C ========
+user.location = 'Texas'
+
+console.log(user)
+//======= D ========
+user.purchased.push("carbohydrates")
+user.purchased.push("peace of mind")
+user.purchased.push("Merino jodhpurs")
+
+
+console.log(user.purchased[2])
+
+//======= E ========
+//1.
+user.friend = {
+    name: 'Sam Smith',
+    age: 30,
+    location: "Virginia",
+    purchased: []
+}
+//2.
+ console.log( user.friend.name)
+ //3.
+ console.log( user.friend.location)
+//4.
+ user.friend.age= 55
+//5.
+user.friend.purchased.push("The One Ring")
+//6.
+user.friend.purchased.push("A latte")
+//7.
+console.log( user.friend.purchased[1])
+
+
+
+ //console.log(user)
