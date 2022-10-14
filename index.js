@@ -105,20 +105,22 @@ for (let bank = 1; bank <= 10; bank++) {
 }
 console.log(bankAccount)
 //2.
-// let bonus = 0;
-// for(let pay = 1; pay <= 100; pay*2){
+let bonus = 0;
+for(let pay = 1; pay <= 100; pay++ ){
+    bonus += pay
+    }
+        console.log(bonus);
+bankAccount = bonus*2
 
-// }
-// console.log(bonus)
+console.log(bankAccount)
 
 
-
-//===== III. Arrays & Control flow =======
-/*       == A. Talk about it ==
-1. Index
-2. Yes
-3. Description, Items, ....
-*/
+// //===== III. Arrays & Control flow =======
+// /*       == A. Talk about it ==
+// 1. Index
+// 2. Yes
+// 3. Description, Items, ....
+// */
 
 //===== B. Easy Does It =====
 let quotes = ["If you don't grow, you are shrinking", "Life is to short to live in the past", "YOLO"]
@@ -157,8 +159,8 @@ myArray.pop(5)
 //pop it helps delete the last item in the array
 
 // //#5 is not working
-// Array.prototype.reverse(myArray)
-// //console.log(myArray)
+myArray.reverse();
+console.log(myArray)
 
 // //===== F. Biggie Smalls ======
 
@@ -412,3 +414,39 @@ function oldAndLoud(person){
 console.log((user.firstName))
 }
 oldAndLoud(" ABES")
+
+
+
+//============== CAT COMBINATOR ==============
+
+//======== 1. MAMA CAT =========
+const cat1 ={
+    name: "Lucy",
+    breed: "Orange cat",
+    age: 7
+}
+console.log(cat1.age)
+console.log(cat1.breed)
+
+
+//======== 2. PAPA CAT =========
+
+const cat2 = {
+    name: "Chaps",
+    breed: "blue cat",
+    age: 8
+}
+
+//======== 3. COMBINE CATS =========
+
+let combineCats = function (mama, papa){
+      console.log(mama, papa) 
+    
+}
+combineCats(cat1, cat2 )
+
+//======== 4. CAT BRAIN BENDER =========
+
+
+//console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+
