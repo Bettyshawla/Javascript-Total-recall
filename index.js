@@ -236,19 +236,27 @@ thomsCloset[1].splice(2, 1, "Footie Pajamas")
 
 //console.log(thomsCloset)
 
+
 //================ IV. Functions =================
 
 //======= A. printGreeting ========
-    function printGreeting(name){
-        console.log(`Hello there,  ${name}`);
-    }
-     printGreeting("Christina");
+function printGreeting(name) {
+    console.log(`Hello there,  ${name}!`);
+}
+printGreeting("Slimer");
 
 //======= B. printCool ==========
 
+function printCool(name){
+    console.log(`${name} is cool`);
+}
+printCool("captain Reynolds");
 
 //======= C. calculateCube ==========
-
+function calculateCube(numbercube){
+console.log(Math.pow(numbercube, 2))
+}
+calculateCube(4)
 
 //======= D. isVowel ==========
 let vowel = ("a", "e", "i", "o", "u")
@@ -270,8 +278,20 @@ function isVowel(vowels) {
 console.log(isVowel("a"))
 
 //======= E. getTwoLengths==========
+function getTwoLengths(str1, str2) {
+    const lengthArray = [str1.length, str2.length];
+    return lengthArray;
+}
+
+console.log(getTwoLengths("Hank", "Hippopopalous"))
 
 //======= F.  getMultipleLengths ==========
+
+function getMultipleLengths(word1, word2, word3, word4, word5){
+const multipleArray = [word1.length, word2.length,word3.length, word4.length, word5.length];
+return multipleArray;
+}
+console.log(getMultipleLengths("hello", "what", "is", "up", "dude"));
 
 
 //======= G. maxOfThree ==========
@@ -290,9 +310,31 @@ console.log(maxNum(7, 9, 10));
 
 //======= H. printLongestWord  ==========
 
-const printLongestWord =function(...args)  {
-    args.length
+const printLongestWord = (args) => {
+
+    let longestWord = "";
+
+    for(let i = 0; i < args.length; i++){
+        if(args[i].length > longestWord.length){
+            longestWord = args[i]
+        }
+        // return longestWord;
+    }
+console.log(longestWord);
 }
-//console.log(printLongestWord(["BoJack", "Princess", "Peanutbutter", "big", "Todd"]));
+args = ["BoJack", "Princess", "Peanutbutter", "big", "Todd"]
+printLongestWord(args)
+
 
 //================  Objects =================
+
+//======= A ========
+let user = {
+    firstName: 'Josh',
+    email: 'josh@gmail.com',
+    age: 20,
+    //purchased: [BMW]
+}
+//======= B ========
+user.email='joshnew@gmail.com'
+console.log(user)
